@@ -1,0 +1,52 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: #219ebc;
+
+}
+
+h1 {
+  background-color: pink;
+  width: 200px;
+  
+  padding-left: 100px;
+  padding-top: 50px;
+
+  margin-bottom: 50px;
+}
+
+#one {
+  background-color: #ffd60a;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  /* box-sizing: border-box; */
+  border-radius: 5%;
+
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+
+#two {
+  background-color: #ffc300;
+  border-color: #001d3d;
+  border-width: 3px;
+  border-style: dashed;
+  border-left-color: #ff9f1c;
+  border-left-width: 8px;
+
+  padding-right: 50px;
+
+  margin: 100px;
+}
+
+#three {
+  background-color: #003566;
+  border: 4px solid green;
+  border-top-style: dotted;
+  border-radius: 50%;
+}
+
+button {
+  padding: 10px 50px;
+}

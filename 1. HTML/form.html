@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM Example</title>
+  </head>
+  <body>
+    <h1>Forms demo</h1>
+    <form action="/tacos">
+      <p>
+        <label for="username">Enter a User Name: </label>
+        <input
+          type="text"
+          placeholder="username"
+          id="username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="password">Enter a Password: </label>
+        <input
+          type="password"
+          placeholder="password"
+          id="password"
+          name="password"
+        />
+      </p>
+      <p>
+        <label for="color">Choose a color: </label>
+        <input type="color" id="color" name="color" />
+      </p>
+      <p>
+        <label for="number">Choose a number: </label>
+        <input
+          type="number"
+          placeholder="number"
+          id="number"
+          name="num"
+          min="0"
+          max="1000"
+          step="2"
+        />
+      </p>
+
+      <div class="preference">
+        <label for="cheese"> Do you like Ryan?? </label>
+        <input type="checkbox" name="cheese" id="cheese" />
+      </div>
+
+      <button class="submit" type="button">Submit</button>
+    </form>
+
+    <h2>Hijacking Searches</h2>
+    <h3>Search Google</h3>
+    <form action="http://www.google.com/search">
+      <input type="text" name="q" />
+      <button>Search Google</button>
+    </form>
+
+    <h2>More Input!</h2>
+    <form action="/birds">
+      <input type="checkbox" name="agree_tos" id="agree" checked />
+      <label for="agree"> I agree to everything. </label>
+      <button>Submit</button>
+    </form>
+
+    <h2>Radio button</h2>
+    <form action="/birds">
+      <p>make a choice:</p>
+      <div>
+        <input type="radio" name="size" value="1" />
+        <label for="1">1</label>
+      </div>
+      <div>
+        <input type="radio" name="size" value="2" />
+        <label for="2">2</label>
+      </div>
+      <div>
+        <input type="radio" name="size" value="3" />
+        <label for="3">3</label>
+      </div>
+      <button>Submit</button>
+
+      <h2>Select button</h2>
+      <label for="pet-selection">Choose a pet: </label>
+      <select name="pets" id="pet-selection">
+        <option value="">-------</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="goldfish">Goldfish</option>
+      </select>
+      <button>Submit</button>
+
+      <h2>Range button</h2>
+      <p>Audio setting:</p>
+      <div>
+        <input
+          type="range"
+          id="volume"
+          name="volume"
+          min="0"
+          step="2"
+          max="20"
+        />
+        <label for="volume">volumn</label>
+        <input
+          type="range"
+          id="cowbell"
+          name="cowbell"
+          min="0"
+          max="20"
+          step="2"
+        />
+        <label for="cowbell">cowbell</label>
+      </div>
+      <button>Submit</button>
+
+      <h2>Text Area</h2>
+      <label for="RyanFact">Tell me about Ryan: </label>
+      <br />
+      <textarea
+        name="RyanFact"
+        id="RyanFact"
+        cols="50"
+        rows="3"
+        placeholder="type something here..."
+      ></textarea>
+      <br>
+      <button>Submit</button>
+    </form>
+
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+      <label for="first_name">Enter first name here: </label>
+      <input type="text" name="first_name" id="first_name" required>
+      <p>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+      </p>
+      <p>
+        <label for="email">Email: </label>
+        <input type="email" required>
+      </p>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

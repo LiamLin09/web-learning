@@ -1,0 +1,47 @@
+h3 {
+  color:teal;
+  background-color: rgb(122, 89, 150);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  color:grey;
+  font-size:60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  text-align: left;
+  color:blue;
+  font-weight: 500;
+  text-decoration: rgb(43, 0, 255) underline wavy;
+}
+
+p {
+  text-align: left;
+  width: 80%;
+  font-weight: 400;
+  color:blueviolet;
+  text-decoration: none;
+  line-height: 2.5;
+  letter-spacing: 2px;
+}
+
+button {
+  font-size: 30px;
+  background-color: #a8dadc;
+}
+
+body {
+  background-color: #f1faee;
+}
+
+#signUpButton {
+  background-color: #1d3557;
+  color: #f1faee
+}
+
+a {
+  color:#a8dadc;
+}
